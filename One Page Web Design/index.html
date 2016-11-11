@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 1</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+   
+    <header>
+       <div class="inner">
+           <h1>eXemplo</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="active">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#como_funciona">
+                           Como funciona
+                        </a>
+                    </li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                </ul>
+            </nav>
+       </div>
+        
+        
+    </header>    
+    
+    
+    <section id="home">
+       <div class="inner">
+            <h2>A ferramento mais completa para controle de exemplos</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cupiditate dolorem accusamus obcaecati quis placeat accusantium dolorum corporis sint alias, magnam ipsa iusto quasi voluptates sed, deserunt aut, numquam maiores possimus molestiae animi vel sunt! Praesentium ea, laudantium esse quas dolorum officiis ipsum reiciendis nam ullam dolore sapiente labore porro accusantium harum nihil distinctio veritatis! Odio quo consequatur dicta soluta, illo nesciunt corporis fugit rerum doloribus totam quas molestias, eos nihil odit facilis temporibus neque voluptatum. Ducimus nostrum nisi, tempora expedita cum. Minima amet ullam sed minus natus molestias ipsam, magni ea. Asperiores, maiores? Modi voluptas natus hic architecto qui.</p> 
+       </div>
+        
+    </section>
+    
+    <section id="como_funciona">
+       
+       <div class="inner">
+            <h2>Como funciona</h2> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quo sapiente amet reiciendis rerum cumque vel earum. Iste praesentium laborum illum eius voluptates tempora perferendis, enim mollitia eveniet quisquam necessitatibus illo ab eos amet beatae reprehenderit placeat quia, dolore possimus labore. Eos quos, vero suscipit earum ex officiis! Delectus quod blanditiis eligendi dolor porro in, molestiae iure iste harum dicta pariatur voluptates maiores voluptate rem, necessitatibus nisi eveniet nesciunt. Ullam fugiat voluptates, fugit ipsam ea tempora repellendus, debitis hic similique voluptate minima, et cum perferendis dignissimos voluptas asperiores eveniet explicabo numquam eligendi. Voluptatibus quos doloremque dolorum odit voluptatem voluptate dolore?</p>
+
+       </div>
+       
+   </section>
+    
+    <section id="depoimentos">
+       
+       <div class="inner">
+          <h2>Depoimentos de clientes</h2>
+        <p>Nemo iste laudantium delectus a quaerat inventore nam soluta id quisquam, praesentium, eum nostrum cumque molestiae repellendus cum natus fugit repellat voluptate illum ducimus labore! Earum recusandae quisquam reiciendis temporibus expedita architecto, omnis id vero, iure sequi facere consectetur deleniti quidem officia. Corporis nostrum accusantium tempora fugit, blanditiis dolor eius ipsam illo cupiditate quas debitis possimus odit magnam porro distinctio maiores, quisquam nam enim. Rerum soluta, culpa aperiam itaque doloribus suscipit, optio eos dolor quas, est sint incidunt ea architecto qui ipsam dicta deserunt tempore corrupti inventore magni quia maxime iure. Ducimus quibusdam in ratione cum beatae debitis expedita, libero!</p> 
+       </div>
+       
+        
+        </section>
+    
+    <section id="cadastro">
+        <div class="inner">
+            <h2>Cadastro</h2>
+        <p>Inventore soluta ad nostrum veniam explicabo temporibus! Facilis molestiae odit modi ipsam quis dolor libero sunt dolorem sit quam aliquid, veniam quas incidunt animi consequatur possimus vitae dicta neque nostrum! Dignissimos in, excepturi dolores vero quasi, voluptatum temporibus, amet minima error eos distinctio. Facilis quaerat ipsa eaque, non officiis, error odio illo possimus expedita voluptatum nihil omnis mollitia, fuga iusto, obcaecati dicta! Dolore, amet molestiae perspiciatis est ab magni quos mollitia minima unde temporibus dolorum quaerat blanditiis distinctio sit nihil suscipit nostrum repellat. Ipsam laboriosam doloribus labore blanditiis, odit odio. Eaque alias nostrum molestiae rerum cum, quisquam repudiandae corporis iste!</p>
+        </div>
+    </section>
+   
+    <footer>
+        &copy; Web Front-End - Onda Digital - novembro de 2016
+    </footer>
+                
+    
+    <script type="text/javascript">
+        $(function(){
+            
+            $.fn.scrollView = function () {
+                $('html, body').animate(
+                    {scrollTop: $(this).offset().top}, 500
+                );
+            };
+            
+            $('nav ul li a').on('click', function(e){
+                e.preventDefault();
+                $($(this).attr('href')).scrollView();
+                $('a').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+     font-family: "Century Gothic", Helvetica, Arial, "sans-serif";
+     font-size: 15pt;
+     line-height: 1.2;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+header, footer {
+    color: white;
+    background-color: black;
+}
+
+header {
+    overflow: auto;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+}
+
+header h1 {
+    color: #4eb305;
+    float: left;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+h2 {
+    font-weith: normal;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    font-size: 0.8em;
+    
+    transition: all 500ms;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    background-color: #4eb305;
+}
+
+section#home, section#depoimentos {
+    background-color: #4eb305;
+    /* color: white; */
+}
+
+section#como_funciona, section#cadastro{
+    background-image: url("../img/fundo1.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+section{
+    text-align: center;
+    padding: 60px 0 60px 0;
+    text-align: justify;
+}
+
+footer {
+    padding: 10px;
+    text-align:center;
+}
